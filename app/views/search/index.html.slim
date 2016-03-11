@@ -1,15 +1,15 @@
 .container
   .row
     .col-md-12
-      .row.image-list
-      - @images.each_with_index do |image, index|
-        .col-md-4
-          .thumbnail
-            = image_tag image[:image_url], class: 'img-responsive'
-            .caption
-              h4 = image[:title]
-              dl.dl-horizontal
-                dt Posted by
-                dd #{image[:username]}
-                dt Date taken: 
-                dd #{image[:date_taken]}
+      .row.masonry-container
+        - @images.each_with_index do |image, index|
+          .col-md-4.box
+            .thumbnail
+              = image_tag image[:image_url], class: 'img-responsive'
+              .caption
+                h4 = image[:title]
+                dl.dl-horizontal
+                  dt Posted by
+                  dd #{image[:username]}
+                  dt Date taken: 
+                  dd #{image[:date_taken]}

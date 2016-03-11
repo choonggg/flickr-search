@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'masonry-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

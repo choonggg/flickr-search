@@ -91,6 +91,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    masonry-rails (0.2.4)
+      railties
     method_source (0.8.2)
     mime-types (2.99.1)
     mini_portile2 (2.0.0)
@@ -232,6 +234,7 @@ DEPENDENCIES
   flickraw
   jquery-rails
   listen (~> 3.0.5)
+  masonry-rails
   pg (~> 0.18)
   pry-rails
   puma

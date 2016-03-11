@@ -6,6 +6,6 @@ html
     = action_cable_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
-  body
+  body class="c-#{controller_name} a-#{controller.action_name}"
     = render 'layouts/modules/navbar'
     = yield
