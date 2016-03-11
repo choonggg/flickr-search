@@ -13,7 +13,7 @@ class SearchForm
     results.map do |photo|
       info = flickr.photos.getInfo(photo_id: photo.id)
 
-      photo_result = { title: photo.title, image_url: FlickRaw.url(info), date_taken: info.dates.taken }
+      photo_result = { title: photo.title, username: info.owner.username, image_url: FlickRaw.url_z(info), date_taken: info.dates.taken }
     end
   end
 
