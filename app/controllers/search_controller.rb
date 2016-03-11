@@ -4,7 +4,8 @@ class SearchController < ApplicationController
   end
 
   def index
-    @form = SearchForm.new
+    @form = SearchForm.new(params[:search_form])
+    @images = @form.results
   end
 
   def show

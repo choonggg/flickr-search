@@ -1,0 +1,8 @@
+.container
+  .row
+    .col-md-12
+      - @images.each do |image|
+        ul
+          li = image[:title]
+          li = image[:image_url]
+          li = image[:date_taken]

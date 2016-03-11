@@ -17,6 +17,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
 gem 'slim-rails'
 
+gem 'flickraw'
 gem 'dotenv-rails'
 gem 'pg', '~> 0.18'
 gem 'puma'
