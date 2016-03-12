@@ -9,6 +9,6 @@ class SearchController < ApplicationController
   end
 
   def show
-    @form = SearchForm.new
+    @image = Image.find_by(id: params[:id])
   end
 end

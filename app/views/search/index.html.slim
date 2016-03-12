@@ -5,11 +5,11 @@
         - @images.each_with_index do |image, index|
           .col-md-4.box
             .thumbnail
-              = image_tag image[:image_url], class: 'img-responsive'
+              = image_tag image.image_url, class: 'img-responsive'
               .caption
-                h4 = image[:title]
+                h4 = link_to image.title, search_path(id: image.id)
                 dl.dl-horizontal
                   dt Posted by
-                  dd #{image[:username]}
+                  dd = image.username
                   dt Date taken: 
-                  dd #{image[:date_taken]}
+                  dd = image.date_taken
