@@ -4,11 +4,11 @@
       = image_tag @image.image_url, class: 'img-responsive'
     .col-md-4
       .panel.panel-default
-        .panel-heading = @image.title
+        .panel-heading Taken by #{@image.username}
         .panel-body
           dl
-            dt Taken by
-            dd = @image.username
+            dt Title
+            dd = @image.title
             dt Date Taken
             dd = @image.date_taken
 
