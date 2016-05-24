@@ -3,7 +3,7 @@
     .col-md-12
       .row.masonry-container
         - @images.each_with_index do |image, index|
-          .col-md-4.box
+          .col-sm-12.col-md-4.box
             .thumbnail
               = image_tag image.image_url, class: 'img-responsive'
               .caption

@@ -1,3 +1,11 @@
+@media (max-width: 500px) {
+  body.c-search.a-index {
+    .box {
+      width: 100%;
+    }
+  }
+}
+
 .jumbotron.search-bar {
   height: calc(100vh - 50px);
   padding-top: 220px;

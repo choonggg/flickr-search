@@ -5,3 +5,5 @@ $(document).on "ready page:load", ->
       columnWidth: (containerWidth) ->
         if $(window).width() >= 992
           containerWidth /3
+        else
+          containerWidth / 1
